@@ -1,0 +1,12 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/souyunku/spring-cloud-config.git
+          search-paths: spring-cloud-config
